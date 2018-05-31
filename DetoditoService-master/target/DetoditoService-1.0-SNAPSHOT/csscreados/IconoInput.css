@@ -1,0 +1,22 @@
+input
+{
+    background: url("iconos.gif") no-repeat scroll 0 0 transparent;
+    border: 1px solid #BFBFBF;
+    color: #BFBFBF;
+    padding: 5px 5px 5px 25px;
+    width: 230px;
+}
+
+input.submit
+{
+    width: auto;
+    background-position: 4px -91px;
+    background-color: #999999;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+input.user{ background-position: 4px -21px; }
+input.search{ background-position: 4px 4px; }
+input.password{ background-position: 4px -46px; }
+input.favorite{ background-position: 4px -70px; }

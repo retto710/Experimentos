@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-jul-2017 17:48:52 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pe.edu.upc.entities.Reclamos" table="reclamos" catalog="detodito_service" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="pedidos" class="pe.edu.upc.entities.Pedidos" fetch="select">
+            <column name="pedido_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="servicios" class="pe.edu.upc.entities.Servicios" fetch="select">
+            <column name="servicio_id" not-null="true" />
+        </many-to-one>
+        <property name="fecha" type="string">
+            <column name="fecha" length="45" not-null="true" />
+        </property>
+        <property name="observaciones" type="string">
+            <column name="observaciones" length="250" />
+        </property>
+    </class>
+</hibernate-mapping>
