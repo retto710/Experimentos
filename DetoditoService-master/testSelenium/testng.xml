@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="deToditoTestSuite" parallel="false">
+
+
+<!-- 	<test name="registroUsuario"> -->
+<!-- 		<parameter name="navegador" value="firefox"/> -->
+<!-- 		<parameter name="remoto" value="0"/> -->
+<!-- 		<parameter name="fuenteDatos" value="Excel"/> -->
+<!-- 		<parameter name="rutaArchivo" value="C:\Users\anthony\Documents\Entregable final\OneDrive_1_5-30-2018\DetoditoService-master\data\dataRegistroUsuario.xls"/> -->
+<!-- 		<classes> -->
+<!-- 			<class name="tests.RegistrarUsuarioDriverTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	<test name="cambiarContra">
+		<parameter name="navegador" value="firefox"/>
+		<parameter name="remoto" value="0"/>
+		<parameter name="fuenteDatos" value="Excel"/>
+		<parameter name="rutaArchivo" value="C:\Users\anthony\Documents\Entregable final\OneDrive_1_5-30-2018\DetoditoService-master\data\dataBuscarServicio.xls"/>
+		<classes>
+			<class name="tests.BuscarServicioDriverTest" />
+		</classes>
+	</test>
+</suite> 

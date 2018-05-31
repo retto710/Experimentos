@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="navegador" value="firefox"/>
+  <parameter name="remoto" value="0"/>
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="fuenteDeDatos.Excel"/>
+      <class name="pages.RegistrarServicioPage"/>
+      <class name="tests.RegistrarServicioDriverTest"/>
+      <class name="driver.deToditoDriver"/>
+      <class name="pages.RegistrarUsuarioPage"/>
+      <class name="pages.IniciarSesionPage"/>
+      <class name="util.Utilitario"/>
+      <class name="tests.LoginUsuarioDriverTest"/>
+      <class name="tests.RegistrarUsuarioDriverTest"/>
+      <class name="fuenteDeDatos.MySql"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="tests.RegistrarUsuarioDriverTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="inicioClase"/>
+          <include name="registrarUsuario"/>
+        </methods>
+      </class> <!-- tests.RegistrarUsuarioDriverTest -->
+      <class name="tests.RegistrarServicioDriverTest">
+        <methods>
+          <include name="registrarServicio"/>
+          <include name="inicioClase"/>
+        </methods>
+      </class> <!-- tests.RegistrarServicioDriverTest -->
+      <class name="tests.LoginUsuarioDriverTest">
+        <methods>
+          <include name="registrarServicio"/>
+          <include name="inicioClase"/>
+        </methods>
+      </class> <!-- tests.LoginUsuarioDriverTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

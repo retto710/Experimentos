@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [deToditoTestSuite]">
+  <parameter name="navegador" value="firefox"/>
+  <parameter name="rutaArchivo" value="C:\Users\anthony\Documents\Entregable final\OneDrive_1_5-30-2018\DetoditoService-master\data\dataBuscarServicio.xls"/>
+  <parameter name="remoto" value="0"/>
+  <parameter name="fuenteDatos" value="Excel"/>
+  <test name="cambiarContra">
+    <parameter name="navegador" value="firefox"/>
+    <parameter name="rutaArchivo" value="C:\Users\anthony\Documents\Entregable final\OneDrive_1_5-30-2018\DetoditoService-master\data\dataBuscarServicio.xls"/>
+    <parameter name="remoto" value="0"/>
+    <parameter name="fuenteDatos" value="Excel"/>
+    <classes>
+      <class name="tests.BuscarServicioDriverTest"/>
+    </classes>
+  </test> <!-- cambiarContra -->
+  <test name="cambiarContra(failed)">
+    <parameter name="navegador" value="firefox"/>
+    <parameter name="rutaArchivo" value="C:\Users\anthony\Documents\Entregable final\OneDrive_1_5-30-2018\DetoditoService-master\data\dataBuscarServicio.xls"/>
+    <parameter name="remoto" value="0"/>
+    <parameter name="fuenteDatos" value="Excel"/>
+    <classes>
+      <class name="tests.BuscarServicioDriverTest">
+        <methods>
+          <include name="buscarServicio" invocation-numbers="0 1 2 3"/>
+          <include name="inicioClase"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.BuscarServicioDriverTest -->
+    </classes>
+  </test> <!-- cambiarContra(failed) -->
+</suite> <!-- Failed suite [deToditoTestSuite] -->
